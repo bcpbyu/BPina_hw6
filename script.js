@@ -9,7 +9,6 @@ var city;
 // API variables
 var rnURL = "https://api.openweathermap.org/data/2.5/weather?";
 var daysURL = "https://api.openweathermap.org/data/2.5/onecall?";
-var uvURL = "https://api.openweathermap.org/data/2.5/uvi?";
 var APIKey = "18409c975f3793d3225bf3a92db4ca88";
 
 // Call load function
