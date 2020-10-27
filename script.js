@@ -79,7 +79,7 @@ function weatherRn() {
                 $("#day" + i).empty();
                 var d1 = new Date(response.daily[i].dt * 1000);
                 $("<h5>").text(d1.getMonth()+1 + "/" + d1.getDate() + "/" + d1.getFullYear()).appendTo("#day" + i);
-                var icon = $("<img>").attr("src", "http://openweathermap.org/img/wn/" + response.daily[i].weather[0].icon + "@2x.png").appendTo("#day" + i);
+                var icon = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + response.daily[i].weather[0].icon + "@2x.png").appendTo("#day" + i);
                 icon.css("height","50px");
                 $("<p>").text("Temp: " + ((response.daily[i].temp.day-273.15)*1.8+32).toFixed(1) + " °F").appendTo("#day" + i);
                 $("<p>").text("Humidity: " + response.daily[i].humidity + "%").appendTo("#day" + i);
